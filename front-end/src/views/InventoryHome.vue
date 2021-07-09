@@ -54,7 +54,11 @@
     </div>
     <div class="spacer"></div>
   </div>
-  <div v-else>You don't have any inventories, try creating one.</div>
+  <div class="no-inventories-container" v-else>
+    <p class="no-inventories">
+      You don't have any inventories, try creating one.
+    </p>
+  </div>
 </template>
 
 <script>
@@ -220,5 +224,13 @@ td > a:hover {
   width: 100%;
   display: flex;
   justify-content: end;
+}
+
+.no-inventories-container {
+  margin: 20% auto;
+}
+
+.no-inventories {
+  font-size: 1.3em;
 }
 </style>
