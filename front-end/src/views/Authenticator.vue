@@ -4,7 +4,7 @@
     <table>
       <tr>
         <td>
-          <label>Prefered Name:</label>
+          <label>Name:</label>
         </td>
         <td>
           <input v-model="registerName" />
